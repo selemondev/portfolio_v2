@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto:wght@500&family=Rubik+Mono+One&family=Splash&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#10101A] font-Inter
+  }
+}
+
+@layer components {
+    .list-tags {
+        @apply text-gray-400 hover:text-gray-300 cursor-pointer font-bold
+    }
+    .icon-style {
+      @apply text-gray-400 hover:text-gray-300 w-10 h-10
+    }
+    .background-animate {
+        background-size: 400%;
+    
+        -webkit-animation: AnimationName 3s ease infinite;
+        -moz-animation: AnimationName 3s ease infinite;
+        animation: AnimationName 3s ease infinite;
+      }
+    
+      @keyframes AnimationName {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+    .box1,.box2,.box3 {
+        margin: 5px;
+        width: 35px;
+        height: 3px;
+        background-color: #fff;
+        transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
+    }
+    .sidebar {
+        height: 100%;
+        width: 250px;
+        top: -0.2%;
+        left: 0;
+        position: fixed;
+        z-index: 50;
+        background: #10101A;
+        display: inline-block;
+        list-style: none;
+        transition: all 0.5s;
+    }
+    .sidebar li {
+        margin: 10px;
+    }
+    .sidebar li a {
+        text-decoration: none;
+        font-size: 20px;
+    }
+     .rotate .box1{
+         transform: rotate(40deg) translate(8px,3px);
+     }
+     .rotate .box3{
+         transform: rotate(-45deg) translate(8px,-5px);
+       }
+     .rotate .box2{
+        opacity: 0;
+     }
+}
