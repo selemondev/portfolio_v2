@@ -5,16 +5,23 @@
 
 @layer base {
   body {
-    @apply bg-[#10101A] font-Inter
+    @apply dark:bg-[#10101A] bg-white font-Inter
   }
 }
 
 @layer components {
     .list-tags {
-        @apply text-gray-400 hover:text-gray-300 cursor-pointer font-bold
+        @apply text-black cursor-pointer font-bold
+    }
+
+    .mobileNav-tags {
+      @apply font-bold dark:text-white dark:hover:text-purple-500 hover:text-purple-500  duration-200 ease-in
     }
     .icon-style {
-      @apply text-gray-400 hover:text-gray-300 w-10 h-10
+      @apply dark:text-gray-400 dark:hover:text-gray-300 text-gray-600 hover:text-black duration-200 ease-in w-10 h-10
+    }
+    .grid-center {
+      @apply grid place-items-center
     }
     .background-animate {
         background-size: 400%;
