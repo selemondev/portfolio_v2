@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply dark:bg-[#10101A] bg-white font-Inter
+    @apply bg-[#10101A] font-Inter
   }
 }
 
@@ -15,10 +15,10 @@
     }
 
     .mobileNav-tags {
-      @apply font-bold dark:text-white dark:hover:text-purple-500 hover:text-purple-500  duration-200 ease-in
+      @apply font-bold text-white hover:text-purple-500  duration-200 ease-in
     }
     .icon-style {
-      @apply dark:text-gray-400 dark:hover:text-gray-300 text-gray-600 hover:text-black duration-200 ease-in w-10 h-10
+      @apply text-gray-400 hover:text-gray-300 duration-200 ease-in w-10 h-10
     }
     .grid-center {
       @apply grid place-items-center
